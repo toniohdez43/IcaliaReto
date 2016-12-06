@@ -1,0 +1,363 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF3B83F31DF622880081E465 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3B83F21DF622880081E465 /* AppDelegate.swift */; };
+		DF3B83F51DF622880081E465 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3B83F41DF622880081E465 /* ViewController.swift */; };
+		DF3B83F81DF622880081E465 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF3B83F61DF622880081E465 /* Main.storyboard */; };
+		DF3B83FA1DF622880081E465 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF3B83F91DF622880081E465 /* Assets.xcassets */; };
+		DF3B83FD1DF622880081E465 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF3B83FB1DF622880081E465 /* LaunchScreen.storyboard */; };
+		DF3B840C1DF625370081E465 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3B840B1DF625370081E465 /* CustomCollectionViewCell.swift */; };
+		DF3B840E1DF6357C0081E465 /* TeamMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3B840D1DF6357C0081E465 /* TeamMember.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DF3B83EF1DF622880081E465 /* RetoIcalia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetoIcalia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF3B83F21DF622880081E465 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DF3B83F41DF622880081E465 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DF3B83F71DF622880081E465 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DF3B83F91DF622880081E465 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DF3B83FC1DF622880081E465 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DF3B83FE1DF622880081E465 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF3B840B1DF625370081E465 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		DF3B840D1DF6357C0081E465 /* TeamMember.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamMember.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF3B83EC1DF622880081E465 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF3B83E61DF622880081E465 = {
+			isa = PBXGroup;
+			children = (
+				DF3B83F11DF622880081E465 /* RetoIcalia */,
+				DF3B83F01DF622880081E465 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF3B83F01DF622880081E465 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF3B83EF1DF622880081E465 /* RetoIcalia.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF3B83F11DF622880081E465 /* RetoIcalia */ = {
+			isa = PBXGroup;
+			children = (
+				DF3B83F21DF622880081E465 /* AppDelegate.swift */,
+				DF3B84091DF624D40081E465 /* Components */,
+				DF3B84081DF623C60081E465 /* Models */,
+				DF3B84061DF623AE0081E465 /* Utils */,
+				DF3B84051DF6239F0081E465 /* ViewControllers */,
+				DF3B84041DF623960081E465 /* Assets */,
+			);
+			path = RetoIcalia;
+			sourceTree = "<group>";
+		};
+		DF3B84041DF623960081E465 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				DF3B83F91DF622880081E465 /* Assets.xcassets */,
+				DF3B83F61DF622880081E465 /* Main.storyboard */,
+				DF3B83FE1DF622880081E465 /* Info.plist */,
+				DF3B83FB1DF622880081E465 /* LaunchScreen.storyboard */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		DF3B84051DF6239F0081E465 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DF3B83F41DF622880081E465 /* ViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DF3B84061DF623AE0081E465 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		DF3B84081DF623C60081E465 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DF3B840D1DF6357C0081E465 /* TeamMember.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		DF3B84091DF624D40081E465 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DF3B840A1DF624E10081E465 /* Cells */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		DF3B840A1DF624E10081E465 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DF3B840B1DF625370081E465 /* CustomCollectionViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF3B83EE1DF622880081E465 /* RetoIcalia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF3B84011DF622880081E465 /* Build configuration list for PBXNativeTarget "RetoIcalia" */;
+			buildPhases = (
+				DF3B83EB1DF622880081E465 /* Sources */,
+				DF3B83EC1DF622880081E465 /* Frameworks */,
+				DF3B83ED1DF622880081E465 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RetoIcalia;
+			productName = RetoIcalia;
+			productReference = DF3B83EF1DF622880081E465 /* RetoIcalia.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF3B83E71DF622880081E465 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Grabriel Antonio Hernández";
+				TargetAttributes = {
+					DF3B83EE1DF622880081E465 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = H9SZPBU2NR;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DF3B83EA1DF622880081E465 /* Build configuration list for PBXProject "RetoIcalia" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF3B83E61DF622880081E465;
+			productRefGroup = DF3B83F01DF622880081E465 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF3B83EE1DF622880081E465 /* RetoIcalia */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF3B83ED1DF622880081E465 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF3B83FD1DF622880081E465 /* LaunchScreen.storyboard in Resources */,
+				DF3B83FA1DF622880081E465 /* Assets.xcassets in Resources */,
+				DF3B83F81DF622880081E465 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF3B83EB1DF622880081E465 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF3B83F51DF622880081E465 /* ViewController.swift in Sources */,
+				DF3B840C1DF625370081E465 /* CustomCollectionViewCell.swift in Sources */,
+				DF3B840E1DF6357C0081E465 /* TeamMember.swift in Sources */,
+				DF3B83F31DF622880081E465 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DF3B83F61DF622880081E465 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF3B83F71DF622880081E465 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DF3B83FB1DF622880081E465 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF3B83FC1DF622880081E465 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DF3B83FF1DF622880081E465 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DF3B84001DF622880081E465 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF3B84021DF622880081E465 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = H9SZPBU2NR;
+				INFOPLIST_FILE = RetoIcalia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tonio43.RetoIcalia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DF3B84031DF622880081E465 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = H9SZPBU2NR;
+				INFOPLIST_FILE = RetoIcalia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tonio43.RetoIcalia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF3B83EA1DF622880081E465 /* Build configuration list for PBXProject "RetoIcalia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF3B83FF1DF622880081E465 /* Debug */,
+				DF3B84001DF622880081E465 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF3B84011DF622880081E465 /* Build configuration list for PBXNativeTarget "RetoIcalia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF3B84021DF622880081E465 /* Debug */,
+				DF3B84031DF622880081E465 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF3B83E71DF622880081E465 /* Project object */;
+}

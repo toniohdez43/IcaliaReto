@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dtB-1u-76D">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--IcaliaLabs-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="RetoIcalia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iDE-8e-trA">
+                                <rect key="frame" x="0.0" y="124" width="375" height="543"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="GOo-sg-kN7">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="icaliaCell" id="ZUq-MR-n1a" customClass="CustomCollectionViewCell" customModule="RetoIcalia" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTj-TJ-9ns">
+                                                    <rect key="frame" x="0.0" y="71" width="100" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tiA-xl-TJv">
+                                                    <rect key="frame" x="8" y="0.0" width="84" height="71"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="71" id="0AX-o7-87d"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QYO-eQ-Rud">
+                                                    <rect key="frame" x="0.0" y="79" width="100" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" red="1" green="0.73771557286871525" blue="0.63783235905531543" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="WTj-TJ-9ns" firstAttribute="width" secondItem="ZUq-MR-n1a" secondAttribute="width" id="16h-PD-d6v"/>
+                                            <constraint firstItem="QYO-eQ-Rud" firstAttribute="width" secondItem="ZUq-MR-n1a" secondAttribute="width" id="3fk-5V-dNo"/>
+                                            <constraint firstItem="QYO-eQ-Rud" firstAttribute="top" secondItem="WTj-TJ-9ns" secondAttribute="bottom" id="8cy-VO-gaW"/>
+                                            <constraint firstItem="WTj-TJ-9ns" firstAttribute="top" secondItem="tiA-xl-TJv" secondAttribute="bottom" id="KgD-Sj-nbg"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="QYO-eQ-Rud" secondAttribute="bottom" id="PBe-q8-hmN"/>
+                                            <constraint firstItem="QYO-eQ-Rud" firstAttribute="centerX" secondItem="ZUq-MR-n1a" secondAttribute="centerX" id="RW9-23-Sb6"/>
+                                            <constraint firstItem="tiA-xl-TJv" firstAttribute="centerX" secondItem="ZUq-MR-n1a" secondAttribute="centerX" id="SfD-T6-Cws"/>
+                                            <constraint firstAttribute="leadingMargin" secondItem="tiA-xl-TJv" secondAttribute="leading" id="ZDI-a7-KiT"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="tiA-xl-TJv" secondAttribute="trailing" id="ZJe-NZ-EBi"/>
+                                            <constraint firstItem="WTj-TJ-9ns" firstAttribute="centerX" secondItem="ZUq-MR-n1a" secondAttribute="centerX" id="uyd-tQ-HCk"/>
+                                        </constraints>
+                                        <size key="customSize" width="100" height="100"/>
+                                        <connections>
+                                            <outlet property="name" destination="WTj-TJ-9ns" id="DzH-uJ-DgD"/>
+                                            <outlet property="photo" destination="tiA-xl-TJv" id="lOI-Pb-s6w"/>
+                                            <outlet property="title" destination="QYO-eQ-Rud" id="WMf-kD-9qY"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="S1v-LP-tyL">
+                                        <rect key="frame" x="138" y="0.0" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                        <size key="customSize" width="100" height="100"/>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="ILG-1W-Tbe"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ADb-dX-etj"/>
+                                    <outlet property="prefetchDataSource" destination="BYZ-38-t0r" id="6bv-La-e2f"/>
+                                </connections>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Icalia Team" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOc-4f-l3T">
+                                <rect key="frame" x="102" y="79" width="170" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
+                                <color key="textColor" red="1" green="0.64283687619999996" blue="0.33317568650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iDE-8e-trA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7FX-9q-D1p"/>
+                            <constraint firstItem="YOc-4f-l3T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8vm-N5-KwK"/>
+                            <constraint firstItem="YOc-4f-l3T" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="Bj0-11-QSV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iDE-8e-trA" secondAttribute="trailing" constant="-16" id="KDk-j6-hn9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iDE-8e-trA" secondAttribute="bottom" id="SQT-kV-tWs"/>
+                            <constraint firstItem="iDE-8e-trA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="otM-g3-gGQ"/>
+                            <constraint firstItem="iDE-8e-trA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="w8u-F0-Tzz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="IcaliaLabs" id="2zj-zC-nkY"/>
+                    <connections>
+                        <outlet property="collectionView" destination="iDE-8e-trA" id="UnB-uH-HKq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056.8" y="123.68815592203899"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ehP-aP-WWw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dtB-1u-76D" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="5iG-gx-MpC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.08034925830263917" blue="0.048402892186843127" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="P34-i3-b6H"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ga4-hZ-Vvp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>

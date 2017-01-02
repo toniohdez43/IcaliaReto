@@ -10,15 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
     //Arreglo de usuarios
-    var users: [TeamMember] = [
+    lazy var users: [TeamMember] = [
     TeamMember(name: "Melissa de la Garza", title: "Happiness Manager", avatar: UIImage(named:"il-user")!),
     TeamMember(name: "Abraham Kuri", title: "CEO", avatar: UIImage(named:"il-user")!),
     TeamMember(name: "Antonio Hernández", title: "Mobile Dev", avatar: UIImage(named:"il-user")!),
-    TeamMember(name: "Luis Aya", title: "Mobile Dev", avatar: UIImage(named:"il-user")!)
+    TeamMember(name: "Daniel Lozano", title: "Mobile Dev", avatar: UIImage(named:"il-user")!)
     ]
     //Variables iniciales, utilizadas para el acomodo correcto de las celdas
-    let mWidth = UIScreen.main.bounds.width
-    let mHeight = UIScreen.main.bounds.height
+    let mWidth = UIScreen.main.bounds.width*3/8
+    let mHeight = UIScreen.main.bounds.height*3/8
     let reuseIdentifier = "icaliaCell"
     
     let sectionInsets = UIEdgeInsets(top: 50, left: UIScreen.main.bounds.width/16, bottom: 10, right: UIScreen.main.bounds.width/16)
@@ -37,14 +37,7 @@ class ViewController: UIViewController {
     }
     
     
-    //Funcion llamada para mostrar la informacion de cada usuario en una celda
-    func setMembers(cell: CustomCollectionViewCell, index: Int){
-        cell.name.text = users[index].name
-        cell.title.text = users[index].title
-        cell.photo.image = users[index].avatar
-        
-    }
-
+   
 }
 
 
@@ -65,9 +58,7 @@ extension ViewController : UICollectionViewDataSource{
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         print("entre")
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CustomCollectionViewCell
-        
-        
-        setMembers(cell: cell, index: indexPath.item)
+        cell.setMembers(user: users[indexPath.row])
         // Configure the cell
         return cell
     }
@@ -97,7 +88,7 @@ extension ViewController : UICollectionViewDelegateFlowLayout {
                                layout collectionViewLayout: UICollectionViewLayout,
                                sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        return CGSize(width: mWidth*3/8, height: mWidth*3/8)
+        return CGSize(width: mWidth, height: mWidth)
     }
     
    //Generamos insets de acuerdo al tamaño de la pantalla

@@ -7,16 +7,12 @@
 //
 
 import UIKit
-//Clase con los atributos del usuario
-class TeamMember: NSObject {
+//Struct con los atributos del usuario
+struct TeamMember {
     var name: String!
     var title: String!
     var avatar: UIImage!
     
-    public init(name: String, title: String, avatar: UIImage){
-        self.name = name
-        self.title = title
-        self.avatar = avatar
-    }
+    
 
 }

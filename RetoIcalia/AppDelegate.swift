@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  RetoIcalia
 //
-//  Created by Sergio Baidon on 05/12/16.
-//  Copyright © 2016 Grabriel Antonio Hernández. All rights reserved.
+//  Created by Gabriel Antonio Hernández on 05/12/16.
+//  Copyright © 2016 Gabriel Antonio Hernández. All rights reserved.
 //
 
 import UIKit
